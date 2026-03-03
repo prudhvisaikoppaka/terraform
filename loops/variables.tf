@@ -47,3 +47,7 @@ variable "sg_tags" {
 variable "environment" {
     default = "prod"
 }
+
+variable "instances" {
+    default = ["mongodb","redis","mysql","rabbitmq"]
+}
