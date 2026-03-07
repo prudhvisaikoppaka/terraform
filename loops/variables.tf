@@ -5,49 +5,57 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
-    default = "t3.micro"
+  default = "t3.micro"
 }
 
 variable "ec2_tags" {
-    type = map(string)
-    default = {
-        Name = "Roboshop"
-        Purpose = "variables-demo" # Can add n number of tags
-    }
+  type = map(string)
+  default = {
+    Name    = "Roboshop"
+    Purpose = "variables-demo" # Can add n number of tags
+  }
 }
 
-variable "sg_name"{
-     default = "allow-all"
+variable "sg_name" {
+  default = "allow-all"
 }
 
 variable "sg_description" {
-    default = "allowing all ports from internet"
+  default = "allowing all ports from internet"
 }
 
 variable "from_port" {
-    default = 0
+  default = 0
 }
 
 variable "to_port" {
-    type = number
-    default = 0
+  type    = number
+  default = 0
 }
 
 variable "cidr_blocks" {
-    type = list(string)
-    default = ["0.0.0.0/0"]
+  type    = list(string)
+  default = ["0.0.0.0/0"]
 }
 
 variable "sg_tags" {
-    default = {
-        Name = "allow-all"
-    }
+  default = {
+    Name = "allow-all"
+  }
 }
 
 variable "environment" {
-    default = "prod"
+  default = "prod"
 }
 
 variable "instances" {
-    default = ["mongodb","redis","mysql","rabbitmq"]
+  default = ["mongodb", "redis", "mysql", "rabbitmq"]
+}
+
+variable "zone_id" {
+  default = "Z08496491D9BJEMR7DC94"
+}
+
+variable "domain_name" {
+  default = "prudhvisai.space"
 }
