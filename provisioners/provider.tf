@@ -8,10 +8,10 @@ terraform {
 
   backend "s3" {
     bucket       = "prudhvisai-remote-state"
-    key          = ""
+    key          = "provisioners"
     region       = "us-east-1"
     encrypt      = true
-    use_lockfile = true 
+    use_lockfile = true
   }
 }
 
