@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "allow_all_dev" {
     name        = "allow_all_dev"
     description = "allow all traffic"
 
