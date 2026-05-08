@@ -12,3 +12,9 @@ provider "aws" {
   alias = "prod"
   profile = "prod"
 }
+
+provider "aws" {
+  # Configure the AWS Provider
+  alias = "dev"
+  profile = "dev"
+}
