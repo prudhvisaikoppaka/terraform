@@ -24,7 +24,7 @@ resource "aws_security_group" "allow_all_dev" {
     provider = aws.dev
 }
 
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "allow_all_prod" {
     name        = "allow_all_prod"
     description = "allow all traffic"
 
