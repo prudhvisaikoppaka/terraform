@@ -9,4 +9,6 @@ terraform {
 
 provider "aws" {
   # Configure the AWS Provider
+  alias = "prod"
+  profile = "prod"
 }
