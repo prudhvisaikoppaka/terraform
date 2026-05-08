@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 provider "aws" {
-  # Configure the AWS Provider
+  # Configuration options
   alias = "dev"
   profile = "dev"
 }
