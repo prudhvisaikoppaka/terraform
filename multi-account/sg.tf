@@ -20,6 +20,8 @@ resource "aws_security_group" "allow_all" {
     tags = {
         Name = "allow-all-dev"
     }
+
+    provider = aws.dev
 }
 
 resource "aws_security_group" "allow_all" {
