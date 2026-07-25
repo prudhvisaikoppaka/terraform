@@ -47,5 +47,5 @@ resource "aws_security_group" "allow_all_prod" {
         Name = "allow-all-prod"
     }
 
-    provider = aws.prod
+    provider = aws.prod  
 }
